@@ -1,9 +1,16 @@
-# Shared package
+# Shared Package
 
-Shared types, schemas, and utilities used by the web app, API, and worker.
+Shared contracts, DTOs, schemas, and utilities for Radar.
 
-Planned contents:
+## Planned contents
 - DTOs
 - validation schemas
-- cross-platform enums
-- shared helpers
+- enums and constants
+- platform-agnostic helpers
+
+## Boundary rules
+- no UI-only code
+- no database access
+- no scraping logic
+- no framework-specific business logic
+- safe to import from web, api, worker, and future clients
